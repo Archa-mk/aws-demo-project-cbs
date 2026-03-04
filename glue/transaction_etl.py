@@ -59,7 +59,7 @@ try:
     logger.info(f"Raw data count: {df_raw.count()}")
 
     # ------------------------------------
-    # BRONZE LAYER (Raw Preserved)
+    # BRONZE LAYER (Raw Preserved )
     # ------------------------------------
     logger.info("Writing Bronze layer to S3...")
     df_raw.write.mode("overwrite") \
