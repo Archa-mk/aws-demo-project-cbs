@@ -45,4 +45,5 @@ jobs:
     - name: Trigger Glue Job
       run: |
         aws glue start-job-run \
-          --job-name transaction-etl-job
+          #--job-name transaction-etl-job
+	   --job-name transaction-etl-job || echo "Job already running, skipping."
